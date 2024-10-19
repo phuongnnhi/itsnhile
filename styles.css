@@ -1,0 +1,374 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before ::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+header {
+  background-color: grey;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  font-family: "Fira Code", monospace;
+  font-size: medium;
+  font-style: normal;
+  font-weight: 200;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link-menu {
+  margin-left: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  margin: 20px auto;
+  padding: 20px 40px;
+  max-width: 1200px;
+  box-sizing: border-box; /* Ensures padding is included in max-width */
+}
+
+
+.grid-container-two {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+#inside {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+/* Section Styling */
+.section {
+  padding: 20px;
+  height: auto;
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #333;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.container {
+  display: inherit;
+}
+
+h1,
+h2 {
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+#h2-title {
+  text-align: left;
+}
+
+p {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+/* Section Intro */
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: top;
+}
+
+.resume-button {
+  padding: 8px 20px;
+  background-color: grey;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  font-family: "Lora", serif;
+  font-size: medium;
+}
+
+.topvoice {
+  height: 30px;
+}
+.avatar {
+  width: 250px;
+  height: 250px;
+  margin-left: 100px;
+}
+
+.testimonials > p {
+  font-size: 0.9rem;
+}
+
+.languages {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.language-option,
+.company,
+.tool,
+.article {
+  padding: 8px 8px;
+  background: rgb(90, 90, 90);
+  background: -moz-linear-gradient(
+    60deg,
+    rgba(90, 90, 90, 1) 0%,
+    rgba(60, 60, 60, 1) 70%,
+    rgba(54, 51, 51, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    60deg,
+    rgba(90, 90, 90, 1) 0%,
+    rgba(60, 60, 60, 1) 70%,
+    rgba(54, 51, 51, 1) 100%
+  );
+  background: linear-gradient(
+    60deg,
+    rgba(90, 90, 90, 1) 0%,
+    rgba(60, 60, 60, 1) 70%,
+    rgba(54, 51, 51, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5a5a5a",endColorstr="#363333",GradientType=1);
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 7px;
+  border-radius: 6px;
+  border-color: grey;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.language-option {
+  width: 73px;
+  white-space: nowrap;
+}
+
+.companies {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.company {
+  margin: 5px;
+}
+
+.tool {
+  margin: 5px;
+  width: 87px;
+}
+
+.digitools {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.article {
+  margin-top: 5px;
+  font-family: "Fira Code", monospace;
+  font-style: normal;
+  font-weight: 400;
+  text-align: start;
+  padding: 8px 15px;
+  border-width: 0px;
+}
+
+.article .description {
+  font-size: smaller;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.gallery-row {
+  display: flex;
+  gap: 15px;
+}
+
+.gallery-img {
+  flex-grow: 1;
+  overflow: hidden;
+  height: 180px;
+  position: relative;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.gallery-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: grey;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.contact-heading {
+  padding-top: 20px;
+}
+
+#site-footer .contact {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: baseline;
+  justify-items: center;
+  gap: 20px;
+  padding: 10px 100px;
+  text-align: left;
+}
+
+.contact-item {
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#email {
+  text-decoration: none;
+  color: white;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nav-link-menu {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .grid-container-two {
+    grid-template-columns: 1fr;
+  }
+
+  /* .intro {
+    flex-direction: row;
+    align-items: center;
+  } */
+
+  .avatar {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  /* Stack "Through people's lenses" and "My nerdy side" in a column layout */
+  .testimonials,
+  .nerdy-side {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 20px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .resume-button {
+    font-size: small;
+  }
+
+  .gallery-container {
+    gap: 5px;
+  }
+
+  .gallery-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 5px 10px;
+  }
+
+  .nav-link {
+    font-size: smaller;
+  }
+
+  .nav-link-menu {
+    font-size: smaller;
+    margin-top: 5px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .section {
+    padding: 10px;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .language-option,
+  .company,
+  .tool {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  #site-footer .contact {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .contact-item {
+    font-size: 1rem;
+  }
+}
